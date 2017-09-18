@@ -1,10 +1,10 @@
 # Site settings
 title: 集梦街
-SEOTitle: 三好五爱的博客 | ZH Blog
+SEOTitle: 赵小恒的博客 | ZH Blog
 header-img: img/post-bg-desk.jpg
 email: 947213515@qq.com
-description: "Every failure is leading towards success."
-keyword: "ZH, ZH的集梦街, 三好五爱的博客, zhaoxiaoheng, 赵小恒, Java, Hadoop, Linux"
+description: "他和他的集梦街"
+keyword: "ZH, ZH的集梦街, 赵小恒的博客, zhaoxiaoheng, 赵小恒, Java, Hadoop, Linux"
 url: "http://ronaldozh.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
