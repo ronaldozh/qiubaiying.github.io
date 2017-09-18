@@ -1,6 +1,6 @@
 # Site settings
 title: 集梦街
-SEOTitle: 赵小恒的博客 | ZH Blog
+SEOTitle: 赵小恒的博客
 header-img: img/post-bg-desk.jpg
 email: 947213515@qq.com
 description: "他和他的集梦街"
@@ -11,7 +11,7 @@ github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
+sidebar-about-description: "人生已经如此艰难，你又何必再为难自己"
 sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
