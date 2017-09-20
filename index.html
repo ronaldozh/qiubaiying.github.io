@@ -19,7 +19,7 @@ description: "木头马尾的集梦街"
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        {{ post.date | date: "%B %-d, %Y" }}
     </p>
 </div>
 <hr>
