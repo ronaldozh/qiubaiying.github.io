@@ -50,6 +50,38 @@ tags:
 #### 1.12第12步
 ![](http://p1tx4k6f5.bkt.clouddn.com/12.png)
 
+### 2、安装git
+#### 2.1第1步
+![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall1.png)
+
+#### 2.2第2步
+![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall2.png)
+
+#### 2.3第3步
+![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall3.png)
+
+#### 2.4第4步
+![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall4.png)
+
+#### 2.5第5步
+![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall5.png)
+
+#### 2.6第6步
+![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall6.png)
+
+#### 2.7第7步
+![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall7.png)
+
+#### 2.8第8步
+![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall8.png)
+
+#### 2.9第9步
+![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall9.png)
+
+#### 2.10第10步
+![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall10.png)
+
+
 
 
 
