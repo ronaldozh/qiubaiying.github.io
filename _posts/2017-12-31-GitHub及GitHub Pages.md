@@ -50,7 +50,7 @@ tags:
 #### 1.12第12步
 ![](http://p1tx4k6f5.bkt.clouddn.com/12.png)
 
-### 2、安装git
+### 2、安装Git
 #### 2.1第1步
 ![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall1.png)
 
@@ -80,6 +80,31 @@ tags:
 
 #### 2.10第10步
 ![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall10.png)
+
+### 3、GitHub Pages操作
+#### 3.1
+
+`下方出现的sanhaowuai都是自己的github账户名称`
+
++ 1、在github上创建一个repository，仓库名称为sanhaowuai.github.io
++ 1、创建一个文件夹，例如我在d盘下创建GitHub
++ 2、打开GitHub文件夹右键鼠标，选择Git Bash Here
++ 3、输入ssh-keygen -t rsa -C "sanhaowuai@163.com"
++ 4、连续三次回车，创建无密码ssh
++ 5、输入ssh -T git@github.com，若出现没有建立的错误输入yes 
++ 6、配置本地账户密码，输入：git config --global user.name "sanhaowuai"，回车，再次输入
+git config --global user.email "sanhaowuai@163.com"
++ 7、添加远程地址，输入：git remote add sanhaowuai git@github.com:sanhaowuai/github.io.git
++ 8、去C盘下依次点开 /用户/zhaoheng/.ssh,然后复制id_rsa.pub中的内容到github中的秘钥配置中。github的公钥配置打开如下图：
+![](http://p1tx4k6f5.bkt.clouddn.com/gitpages1.png)
+![](http://p1tx4k6f5.bkt.clouddn.com/gitpages2.png)
+![](http://p1tx4k6f5.bkt.clouddn.com/gitpages3.png)
+
++ 3、输入git clone https://github.com/sanhaowuai/sanhaowuai.github.io.git(ps:https的地址为项目的地址)
++ 4、将下载好的jekyll模板复制到本地sanhaowuai.github.io文件夹中
++ 
+
+
 
 
 
