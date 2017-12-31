@@ -97,10 +97,13 @@ tags:
 + 6、验证是否连接Github,输入`ssh -T git@github.com`，若出现没有建立的错误输入yes 
 + 7、配置本地账户密码，输入：`git config --global user.name "sanhaowuai"`，回车，再次输入
 `git config --global user.email "sanhaowuai@163.com"`
-+ 8、添加远程地址，输入：`git remote add sanhaowuai git@github.com:sanhaowuai/github.io.git`
++ 8、添加远程地址，输入：  
+`git remote add sanhaowuai git@github.com:sanhaowuai/github.io.git`
 + 9、创建一个文件夹，例如我在d盘下创建GitHub，然后在git的命令框里输入：`cd /d/Github`,再输入`git init`
-+ 10、输入`git clone https://github.com/sanhaowuai/sanhaowuai.github.io.git`，`ps:https的地址为项目的地址`
++ 10、输入`git clone https://github.com/sanhaowuai/sanhaowuai.github.io.git`，  
+**ps:https的地址为项目的地址**
 + 11、将下载好的jekyll模板复制到下载好的本地sanhaowuai.github.io文件夹中
++ 12、输入`cd /d/Github/sanhaowuai.giuhub.io`,依次输入`git add .` ，`git commit -m "提交"`，`git push -u sanhaowuai master`
 + 12、访问sanhaowuai.github.io，即可看到博客主页
 
 #### 3.2git连接多个github账号
