@@ -106,7 +106,7 @@ tags:
 + 12、输入`cd /d/Github/sanhaowuai.giuhub.io`,依次输入`git add .` ，`git commit -m "提交"`，`git push -u sanhaowuai master`
 + 12、访问sanhaowuai.github.io，即可看到博客主页
 
-#### 3.2git连接多个github账号
+#### 3.2Git连接多个GitHub账号
 + 1、`ssh-keygen -t rsa -C "sanhaowuai@163.com"`
 + 2、连续三次回车
 + 3、`ssh-keygen -t rsa -C "947213515@163.com"`
@@ -114,8 +114,7 @@ tags:
 输入：`/c/Users/zhaoheng/.ssh/id_rsa_ronaldozh`
 + 5、再连续点击两次enter回车
 + 6、因为默认只读取id_rsa，为了让SSH识别新的私钥，需将其添加到SSH agent中：`ssh-add ~/.ssh/id_rsa_ronaldozh`
-如果出现Could not open a connection to your authentication agent的错误，就试着用以下命令：
-
+如果出现**Could not open a connection to your authentication agent**的错误，就试着用以下命令：
 `ssh-agent bash`
 `ssh-add ~/.ssh/id_rsa_ronaldozh`
 + 7.在~/.ssh目录下找到config文件，如果没有就创建：`touch config`    
