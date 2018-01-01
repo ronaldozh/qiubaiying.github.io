@@ -113,9 +113,10 @@ tags:
 + 4、回车后出现Generating public/private rsa key pair.Enter file in which to save the key (/c/Users/zhaoheng/.ssh/id_rsa):
 输入：`/c/Users/zhaoheng/.ssh/id_rsa_ronaldozh`
 + 5、再连续点击两次enter回车
-+ 6、因为默认只读取id_rsa，为了让SSH识别新的私钥，需将其添加到SSH agent中：`ssh-add ~/.ssh/id_rsa_ronaldozh`
++ 6、因为默认只读取id_rsa，为了让SSH识别新的私钥，需将其添加到SSH agent中：  
+`ssh-add ~/.ssh/id_rsa_ronaldozh`
 如果出现**Could not open a connection to your authentication agent**的错误，就试着用以下命令：
-`ssh-agent bash`
+`ssh-agent bash`  
 `ssh-add ~/.ssh/id_rsa_ronaldozh`
 + 7.在~/.ssh目录下找到config文件，如果没有就创建：`touch config`    
 然后修改config配置如下：
