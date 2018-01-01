@@ -137,6 +137,47 @@ tags:
 `ssh -T git@github2`
 + 10.修改远程仓库别名 `git remote add sanhaowuai 项目地址`，`git remote add ronaldozh 项目地址`
 
+###4、安装Ruby及RubyKit
+#### 4.1安装Ruby
++ 1、在d盘创建一个文件夹jekyll，打开jekyll再分别创建ruby、rubyDevelop文件夹
++ 2、双击rubyinstaller-2.4.1-x64.exe，按照以下截图，依次执行
+![](http://p1tx4k6f5.bkt.clouddn.com/jekyll1.png)
+![](http://p1tx4k6f5.bkt.clouddn.com/jekyll2.png)
+![](http://p1tx4k6f5.bkt.clouddn.com/jekyll3.png)
+![](http://p1tx4k6f5.bkt.clouddn.com/jekyll4.png)
+**测试ruby是否安装完成，在cmd窗口执行ruby -v**
+#### 4.2安装RubyKit
+双击DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe，按照以下截图执行
+![](http://p1tx4k6f5.bkt.clouddn.com/jekyll5.png)
+**测试gem是否安装完成，在cmd窗口执行gem -v**
+#### 4.3安装Jekyll
++ 1、在cmd窗口依次执行下面的命令
+{% highlight %}
+//更换gem源
+gem sources --remove https://rubygems.org/
+gem sources -a http://gems.ruby-china.org
+
+//查看gem源
+gem sources -l
+
+//更新gem
+gem update --system
+
+//安装jekyll
+gem install jekyll
+{% endhighlight %}
++ 2、在RubyDevelop的安装文件夹里创建一个文件夹myblog,然后将本地的克隆好的sanhaowuai.github.io整体复制到myblog
+![](http://p1tx4k6f5.bkt.clouddn.com/jekyll8.png)
++ 3、执行命令`cd /d d:\jekyll\rubyDevelop\myblog\sanhaowuai.github.io`
++ 4、执行命令`jekyll server`，若出现错误，则在所出现的错误前面加上gem install，则变成gem install 错误名，然后执行，如下图
+![](http://p1tx4k6f5.bkt.clouddn.com/jekyll6.png)
++ 5、执行gem install 错误名后，再次执行jekyll server,有错误，就gem install 错误名，若无，会出现下方界面，则jekyll server启动成功
+![](http://p1tx4k6f5.bkt.clouddn.com/jekyl7.png)
+#### 4.4访问博客
+在浏览器地址栏输入：`localhost:4000`，会出现博客的访问界面
+
+
+
 
 
 
