@@ -138,7 +138,7 @@ tags:
 `ssh -T git@github2`
 + 10.修改远程仓库别名 `git remote add sanhaowuai 项目地址`，`git remote add ronaldozh 项目地址`
 
-###4、安装Ruby及RubyKit
+### 4、安装Ruby及Jekyll
 #### 4.1安装Ruby
 + 1、在d盘创建一个文件夹jekyll，打开jekyll再分别创建ruby、rubyDevelop文件夹
 + 2、双击rubyinstaller-2.4.1-x64.exe，按照以下截图，依次执行
@@ -147,13 +147,15 @@ tags:
 ![](http://p1tx4k6f5.bkt.clouddn.com/jekyll3.png)
 ![](http://p1tx4k6f5.bkt.clouddn.com/jekyll4.png)
 **测试ruby是否安装完成，在cmd窗口执行ruby -v**
+
 #### 4.2安装RubyKit
 双击DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe，按照以下截图执行
 ![](http://p1tx4k6f5.bkt.clouddn.com/jekyll5.png)
 **测试gem是否安装完成，在cmd窗口执行gem -v**
+
 #### 4.3安装Jekyll
 + 1、在cmd窗口依次执行下面的命令
-{% highlight %}
+{% highlight java%}
 //更换gem源
 gem sources --remove https://rubygems.org/
 gem sources -a http://gems.ruby-china.org
