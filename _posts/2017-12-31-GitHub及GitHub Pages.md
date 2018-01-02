@@ -145,13 +145,42 @@ tags:
 ![](http://p1tx4k6f5.bkt.clouddn.com/jekyll1.png)
 ![](http://p1tx4k6f5.bkt.clouddn.com/jekyll2.png)
 ![](http://p1tx4k6f5.bkt.clouddn.com/jekyll3.png)
-![](http://p1tx4k6f5.bkt.clouddn.com/jekyll4.png)
+![](http://p1tx4k6f5.bkt.clouddn.com/jekyll11.png)
+![](http://p1tx4k6f5.bkt.clouddn.com/jekyll12.png)
+![](http://p1tx4k6f5.bkt.clouddn.com/jekyll13.png)
 **测试ruby是否安装完成，在cmd窗口执行ruby -v**
 
 #### 4.2安装RubyKit
-双击DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe，按照以下截图执行
+双击DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe（或者解压），按照以下截图执行
 ![](http://p1tx4k6f5.bkt.clouddn.com/jekyll5.png)
-**测试gem是否安装完成，在cmd窗口执行gem -v**
+**解压完成后，依次输入下面的命令初始化config.yml**
+
+{% highlight java%}
+cd "D:\jekyll\RubyDevelop"
+ruby dk.rb init
+ruby dk.rb install
+{% endhighlight %}
+
+**修正中文乱码问题**
+
+修改安装目录D:\jekyll\ruby\Ruby24-x64\lib\ruby\2.4.0\webrick\httpservlet下的filehandler.rb文件，
+找到下列两处，添加一句（+的一行为添加部分）
+
+**第一处**
+
+{% highlight java%}
+path = req.path_info.dup.force_encoding(Encoding.find("filesystem"))
++ path.force_encoding("UTF-8") # 加入编码
+if trailing_pathsep?(req.path_info)
+{% endhighlight %}
+
+**第二处**
+
+{% highlight java%}
+break if base == "/"
++ base.force_encoding("UTF-8") #加入編碼
+break unless File.directory?(File.expand_path(res.filename + base))
+{% endhighlight %}
 
 #### 4.3安装Jekyll
 + 1、在cmd窗口依次执行下面的命令
@@ -178,6 +207,7 @@ gem install jekyll
 ![](http://p1tx4k6f5.bkt.clouddn.com/jekyl7.png)
 #### 4.4访问博客
 在浏览器地址栏输入：`localhost:4000`，会出现博客的访问界面
+
 
 
 
