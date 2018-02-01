@@ -1,0 +1,56 @@
+SELECT jw_xj_xqyjtjb.dm,   
+         replace(replace(jw_xj_xqyjtjb.mc,'${CS2}',tj2),'${CS1}',tj1) mc,   
+         jw_xj_xqyjtjb.tj1,   
+         jw_xj_xqyjtjb.tj2,   
+         jw_xj_xqyjtjb.kyf,
+      jw_xj_xqyjtjb.yhdm,
+         jw_xj_xqyjtjb.bmdm  
+    FROM jw_xj_xqyjtjb   
+   where jw_xj_xqyjtjb.bmdm  = '01'
+		and jw_xj_xqyjtjb.yhdm  = 'admin'
+	 order by to_number(jw_xj_xqyjtjb.dm)
+	 
+	 
+	 
+	 
+	 
+	 <!-- 导出学生照片  -->
+<div class="modal fade" id="fileDiv_xsdc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+  <div class="modal-dialog" role="document"  >
+    <div class="modal-content popborder">
+      <div class="modal-header">
+        <button type="button" class="close" onclick="javascript:closeTc('fileDiv_xsdc');return false;"><span aria-hidden="true"  >&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">照片导出方式</h4>
+      </div>
+      <form name="fileForm2" id="fileForm2" method="post">
+      	<input name="fileLx2" id="fileLx2" value="" type="hidden"/>
+	      <div class="modal-body" style="height: 300px;width:150px:scroll;">
+	      	 <table id="delXsxxTcTable" class="addlist table-bordered"  >
+	      	 	<tr>
+	      	 		<td><input name="fileName_xs2"  type="radio" checked="checked" value="1"/>学号+jpg</td>
+	      	 	</tr>
+	      	 	</tr>
+	      	 		<td><input name="fileName_xs2"  type="radio" value="2"/>身份证号+jpg</td>
+	      	 	</tr>
+	      	 	</tr>
+	      	 		<td><input name="fileName_xs2"  type="radio" value="3"/>姓名+jpg</td>
+	      	 	</tr>
+	      	 	</tr>
+	      	 		<td><input name="fileName_xs2"  type="radio" value="4"/>准考证号+jpg</td>
+	      	 	</tr>
+	      	 	</tr>
+	      	 		<td><input name="fileName_xs2"  type="radio" value="5"/>学号+姓名+jpg</td>
+	      	 	</tr>
+	      	 	</tr>
+	      	 		<td><input name="fileName_xs2"  type="radio" value="6"/>准考证号+姓名+jpg</td>
+	      	 	</tr>
+	         </table>
+	      </div>
+      </form>
+      <div class="modal-footer mt1">
+        <button type="button" class="btn btn-info" onclick="expXszp();" data-dismiss="modal">确定</button>
+        <button type="button" class="btn btn-info" onclick="javascript:closeTc('fileDiv_xsdc');return false;">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
