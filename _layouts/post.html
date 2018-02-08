@@ -42,7 +42,7 @@ layout: default
                     {% comment %} endif {% endcomment %}
                     <span class="meta"> {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} 发表于 {{ page.date | date: "%Y-%m-%d" }}</span>
 					{% if page.music-id %}
-						{{ page.music-id }}<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id={{ page.music-id }}&auto=1&height=66"></iframe>
+						<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id={{ page.music-id }}&auto=1&height=66"></iframe>
 					{% endif %}
 				</div>
             </div>
