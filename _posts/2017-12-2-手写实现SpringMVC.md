@@ -7,8 +7,8 @@ author:     赵小恒
 header-img: img/post-bg-debug.png
 catalog: true
 tags:
-    - spring
-    - Properties
+    - springmvc
+    - Java
 ---
 
 ### 1、知识点介绍
@@ -24,7 +24,7 @@ tags:
 
 #### 2.2 添加一个入口Servlet
 
-{% highligh ruby %}
+{% highlight ruby %}
 package com.zhaoheng.mvc;  
   
 import javax.servlet.ServletConfig;  
@@ -35,9 +35,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;  
   
 /** 
- * Created by wuwf on 17/6/28. 
- * 入口Sevlet 
- */  
+*入口Sevlet 
+*/  
 public class DispatcherServlet extends HttpServlet {  
   
     @Override  
@@ -63,7 +62,6 @@ public class DispatcherServlet extends HttpServlet {
             e.printStackTrace();  
         }  
     }  
-  
 } 
 {% endhighlight %}   
 这是一个普通的Servlet，里面包含初始化和get、post方法，方便起见，我们让get也走post方法，并在post里输出一句话。
@@ -72,7 +70,7 @@ public class DispatcherServlet extends HttpServlet {
 
 如果想让Servlet生效，能处理web请求，需要在web.xml做配置。
 
-{% highligh ruby %}
+{% highlight ruby %}
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -107,7 +105,7 @@ public class DispatcherServlet extends HttpServlet {
 
 Autowired
 
-{% highligh ruby %}
+{% highlight ruby %}
 package com.zhaoheng.mvc.annotation;
 
 import java.lang.annotation.*;
@@ -123,7 +121,7 @@ public @interface Autowired {
 
 Controller
 
-{% highligh ruby %}
+{% highlight ruby %}
 package com.zhaoheng.mvc.annotation;
 
 import java.lang.annotation.*;
@@ -138,7 +136,7 @@ public @interface Controller {
 
 RequestMapping
 
-{% highligh ruby %}
+{% highlight ruby %}
 package com.zhaoheng.mvc.annotation;
 
 import java.lang.annotation.*;
@@ -153,7 +151,7 @@ public @interface RequestMapping {
 
 RequestParam
 
-{% highligh ruby %}
+{% highlight ruby %}
 package com.zhaoheng.mvc.annotation;
 
 import java.lang.annotation.*;
@@ -170,7 +168,7 @@ public @interface RequestParam {
 
 Service
 
-{% highligh ruby %}
+{% highlight ruby %}
 package com.zhaoheng.mvc.annotation;
 import java.lang.annotation.*;
 
@@ -188,7 +186,7 @@ public @interface Service {
 
 ModifyService
 
-{% highligh ruby %}
+{% highlight ruby %}
 public interface ModifyService {  
   
     String add(String name, String addr);  
@@ -198,7 +196,7 @@ public interface ModifyService {
 
 QueryService
 
-{% highligh ruby %}
+{% highlight ruby %}
 public interface QueryService {  
     String search(String name);  
 }  
@@ -206,7 +204,7 @@ public interface QueryService {
 
 ModifyServiceImpl
 
-{% highligh ruby %}
+{% highlight ruby %}
 package com.zhaoheng.mvc.service;
 
 import com.zhaoheng.mvc.annotation.Service;
@@ -228,7 +226,7 @@ public class ModifyServiceImpl implements ModifyService {
 
 QueryServiceImpl
 
-{% highligh ruby %}
+{% highlight ruby %}
 package com.zhaoheng.mvc.service;
 
 import com.zhaoheng.mvc.annotation.Service;
@@ -244,7 +242,7 @@ public class QueryServiceImpl implements QueryService  {
 
 WebController
 
-{% highligh ruby %}
+{% highlight ruby %}
 package com.zhaoheng.mvc.controller;
 
 import com.zhaoheng.mvc.annotation.Autowired;
@@ -320,7 +318,7 @@ public class WebController {
 
 修改一下web.xml，指定我们需要扫描的包。
 
-{% highligh ruby %}
+{% highlight ruby %}
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -338,7 +336,7 @@ public class WebController {
     <servlet-mapping>
         <servlet-name>dispatchServlet</servlet-name>
         <url-pattern>/*</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping>  
 </web-app>
 {% endhighlight %}
 
@@ -346,7 +344,7 @@ public class WebController {
 
 然后在DispatcherServlet的init方法中，接收并处理。
 
-{% highligh ruby %}
+{% highlight ruby %}
 package com.zhaoheng.mvc;  
   
 import com.zhaoheng.mvc.annotation.Controller;  
@@ -444,13 +442,13 @@ public class DispatcherServlet extends HttpServlet {
 
 DispatcherServlet中添加一个map保存beanName和实例的映射。
 
-{% highligh ruby %}
+{% highlight ruby %}
 private Map<String, Object> instanceMapping = new HashMap<>(); 
 {% endhighlight %} 
 
 添加doInstance
 
-{% highligh ruby %}
+{% highlight ruby %}
 @Override  
 public void init(ServletConfig config) throws ServletException {  
 	System.out.println("我是初始化方法");  
@@ -462,7 +460,7 @@ public void init(ServletConfig config) throws ServletException {
 } 
 {% endhighlight %} 
 
-{% highligh ruby %}
+{% highlight ruby %}
 /** 
 * 实例化 
 */  
@@ -505,7 +503,7 @@ private void doInstance() {
 }  
 {% endhighlight %} 
 
-{% highligh ruby %}
+{% highlight ruby %}
 private String lowerFirstChar(String className) {  
 	char[] chars = className.toCharArray();  
 	chars[0] += 32;  
@@ -528,7 +526,7 @@ private String lowerFirstChar(String className) {
 
 #### 4.1 通过反射给属性和参数注入值
 
-{% highligh ruby %}
+{% highlight ruby %}
 /** 
  * 给被AutoWired注解的属性注入值 
  */  
@@ -587,13 +585,13 @@ private void doAutoWired() {
   
 创建个map
 
-{% highligh ruby %}
+{% highlight ruby %}
 private Map<String, Method> handlerMapping = new HashMap<>();  
 {% endhighlight %} 
 
 创建方法
 
-{% highligh ruby %}
+{% highlight ruby %}
 /** 
  * 建立url到方法的映射 
  */  
@@ -649,7 +647,7 @@ HttpServletResponse response这几个。
 但是在我们的上一步操作中，我们的HandlerMapping里只保存了method对象，没有保存Controller对象和所有的参数，所有这一步是执行不下去的。  
 那么就需要对HandlerMapping进行改造，把需要的值也放进去。  
 新建一个javaBean，来装载Method需要的所有属性
-{% highligh ruby %}
+{% highlight ruby %}
 package com.zhaoheng.mvc.pojo;
 
 import java.lang.reflect.Method;
@@ -694,7 +692,7 @@ public class HandlerModel {
 
 添加doHandlerMapping方法，来完成Url到方法的映射
 
-{% highligh ruby %}
+{% highlight ruby %}
 /**
  * 建立url到方法的映射
  */
@@ -791,7 +789,7 @@ private void doHandlerMapping() {
 
 还有一个asm取方法名的工具类：
 
-{% highligh ruby %}
+{% highlight ruby %}
 package com.zhaoheng.mvc.util;
 
 import org.objectweb.asm.*;
@@ -881,7 +879,7 @@ public class Play {
 
 直接上代码：
 
-{% highligh ruby %}
+{% highlight ruby %}
 @Override  
 protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {  
 	//根据请求的URL去查找对应的method  
@@ -900,7 +898,7 @@ protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws S
 }
 {% endhighlight %}	
 
-{% highligh ruby %}
+{% highlight ruby %}
 private boolean pattern(HttpServletRequest request, HttpServletResponse response) throws Exception {
 	if (handlerMapping.isEmpty()) {
 		return false;
@@ -949,7 +947,7 @@ private boolean pattern(HttpServletRequest request, HttpServletResponse response
 
 由于用户传来的都是String，我们需要根据参数的具体类型，进行转换
 
-{% highligh ruby %}
+{% highlight ruby %}
 /** 
  * 将用户传来的参数转换为方法需要的参数类型 
  */  
@@ -977,7 +975,7 @@ private Object convert(String parameter, Class<?> targetType) {
 以上就OK了。
 
 以下为完整代码
-{% highligh ruby %}
+{% highlight ruby %}
 package com.zhaoheng.mvc;
 
 import com.zhaoheng.mvc.annotation.*;
