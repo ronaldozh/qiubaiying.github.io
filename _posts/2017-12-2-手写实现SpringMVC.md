@@ -538,7 +538,7 @@ private void doAutoWired() {
 	for (Map.Entry<String, Object> entry : instanceMapping.entrySet()) {  
 		//查找所有被Autowired注解的属性  
 		// getFields()获得某个类的所有的公共（public）的字段，包括父类;  
-		// getDeclaredFields()获得某个类的所有申明的字段，即包括public、private和proteced，但是不包括父类的申明字段。  
+		// getDeclaredFields()获得某个类的所有声明的字段，即包括public、private和proteced，但是不包括父类的声明字段。  
 		Field[] fields = entry.getValue().getClass().getDeclaredFields();  
 		for (Field field : fields) {  
 			//没加autowired的不需要注值  
