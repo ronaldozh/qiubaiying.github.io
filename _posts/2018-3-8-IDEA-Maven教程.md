@@ -11,16 +11,16 @@ tags:
     - jetty
 ---
 
-### 1、配置
+### 1、Maven教程及配置本地Maven
+
+[Maven教程博客](http://www.cnblogs.com/Brake/p/maven_pom_optimization.html) 
 
 若想通过cmd窗口，在项目目录下启动jetty,例如：在项目web-app目录下，输入mvn jetty:run,则访问的自带的maven,
 若想访问本地仓库，则在c盘的.m2文件夹中的setting.xml文件中加入  
 `<localRepository>D:\javasoft\maven\apache-maven-3.5.2\repository</localRepository>`  
 指向本地仓库。
 
-[Maven教程博客](http://www.cnblogs.com/Brake/p/maven_pom_optimization.html)  
-
-#### 1.1 配置jetty
+### 2、配置jetty插件
 
 首先新建一个maven项目，然后在pom文件中配置maven-jetty-plugin插件，如下是一个完整的pom文件：
 
@@ -80,9 +80,9 @@ tags:
 保存之后，在右侧MavenProjects中双击刚配置的jetty即可启动服务器。
 ![](http://p2q983f8e.bkt.clouddn.com/maven_jetty_3.jpg)
 
-### 2、利用intellij idea创建maven 多模块项目
+### 3、利用intellij idea创建maven 多模块项目
 
-#### 2.1 发布war包及jetty访问
+#### 3.1 发布war包及jetty访问
 
 1.需要点击右侧MavenProjects中的父module中的Lifecycle->package
 2.父module中的Lifecycle->package->install,后即可使用jetty插件发布，若使用tomcat无需install
