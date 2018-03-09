@@ -111,7 +111,18 @@
         </div>
     </div>
 </footer>
-
+<script>
+window.tctipConfig = {
+        staticPrefix:   "http://static.tctip.com",
+        buttonImageId:  1,
+        buttonTip:  "zanzhu",
+        list:{
+            alipay: {qrimg: "http://p5b6t0vko.bkt.clouddn.com/zhifubao.jpg"},
+            weixin:{qrimg: "http://p5b6t0vko.bkt.clouddn.com/weixin.jpg"}, 
+        }
+};
+</script>
+<script src="http://static.tctip.com/js/tctip.min.js"></script>
 <!-- jQuery -->
 <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
 
