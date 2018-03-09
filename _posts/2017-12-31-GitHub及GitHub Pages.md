@@ -208,6 +208,8 @@ gem install jekyll
 #### 4.4访问博客
 在浏览器地址栏输入：`localhost:4000`，会出现博客的访问界面
 
+[添加打赏及统计功能](https://www.cnblogs.com/OceanHeaven/p/6942144.html)
+
 
 
 

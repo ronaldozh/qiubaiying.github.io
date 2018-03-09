@@ -84,7 +84,7 @@ tags:
 
 #### 3.1 发布war包及jetty访问
 
-1.需要点击右侧MavenProjects中的父module中的Lifecycle->package
+1.需要点击右侧MavenProjects中的父module中的Lifecycle->package  
 2.父module中的Lifecycle->package->install,后即可使用jetty插件发布，若使用tomcat无需install
 
 
