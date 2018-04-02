@@ -212,7 +212,7 @@ gem install jekyll
 
 [添加打赏功能](https://www.cnblogs.com/OceanHeaven/p/6942144.html)  
 [添加统计功能](https://www.jianshu.com/p/9f71e260925d)
-
+[添加网易云音乐](http://www.zhimengzhe.com/HTMLjiaocheng/186049.html)
 
 
 
