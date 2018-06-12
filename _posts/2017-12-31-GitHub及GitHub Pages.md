@@ -101,7 +101,8 @@ tags:
 `git remote add sanhaowuai git@github.com:sanhaowuai/github.io.git`
 + 9、创建一个文件夹，例如我在d盘下创建GitHub，然后在git的命令框里输入：`cd /d/Github`,再输入`git init`
 + 10、输入`git clone https://github.com/sanhaowuai/sanhaowuai.github.io.git`，  
-**ps:https的地址为项目的地址**
+**ps:https的地址为项目的地址，这是通过http协议进行克隆，还可以通过ssh协议进行克隆git clone git@github.com:sanhaowuai/sanhaowuai.github.io.git，
+由于上面已经设置了无密码的ssh，通过这种方式可以无密码push**
 + 11、将下载好的jekyll模板复制到下载好的本地sanhaowuai.github.io文件夹中
 + 12、输入`cd /d/Github/sanhaowuai.giuhub.io`,依次输入`git add .` ，`git commit -m "提交"`，`git push -u sanhaowuai master`
 + 12、访问sanhaowuai.github.io，即可看到博客主页
