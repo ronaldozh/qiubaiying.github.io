@@ -13,6 +13,8 @@ tags:
 
 ### 1、Maven教程及配置本地Maven
 
+[配置教程—优先考虑](https://www.cnblogs.com/phpdragon/p/7216626.html)
+
 [Maven教程博客](http://www.cnblogs.com/Brake/p/maven_pom_optimization.html) 
 
 若想通过cmd窗口，在项目目录下启动jetty,例如：在项目web-app目录下，输入mvn jetty:run,则访问的自带的maven,
