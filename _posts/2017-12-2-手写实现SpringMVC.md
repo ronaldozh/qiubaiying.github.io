@@ -97,7 +97,7 @@ public class DispatcherServlet extends HttpServlet {
 ### 3、自定义注解及反射赋值
 
 项目文件结构
-![](http://p4suof94f.bkt.clouddn.com/springmvc_1.jpg)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/springmvc_1.jpg)
 
 #### 3.1 先来创建自定义注解
 
@@ -428,7 +428,7 @@ public class DispatcherServlet extends HttpServlet {
 
 这里定义了一个scanPackage的方法，是用于递归处理web.xml定义的需要被扫描的包下的所有等待被接管的类。我们将所有需要被托管的类，保存到一个list中。供下一步实例化时使用。
 写完后，执行看一下被扫描的托管类：
-![](http://p4suof94f.bkt.clouddn.com/springmvc_2.jpg)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/springmvc_2.jpg)
 这样就取到了所有被Controller和Service标注的类了。
 
 ##### 3.3.2 实例化bean
@@ -512,7 +512,7 @@ private String lowerFirstChar(String className) {
 {% endhighlight %} 
 
 重新启动执行，来看看映射的结果：
-![](http://p4suof94f.bkt.clouddn.com/springmvc_3.jpg)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/springmvc_3.jpg)
 
 可以看到，已经按照我们的规则保存好了beanName和实例之间的映射关系了。
 
@@ -572,7 +572,7 @@ private void doAutoWired() {
 在init方法里，instance下面加上doAutowired方法。
 
 重启，查看注入情况
-![](http://p4suof94f.bkt.clouddn.com/springmvc_4.jpg)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/springmvc_4.jpg)
 可以看到webController里的属性，queryService和modifyService都已经被成功注入了正确的实现类。
 
 #### 4.2 建立Url到方法的映射
@@ -867,7 +867,7 @@ public class Play {
 {% endhighlight %}
 
 完成这一步后，重启看看映射的结果：
-![](http://p4suof94f.bkt.clouddn.com/springmvc_5.jpg)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/springmvc_5.jpg)
 
 发现已经正确建立了映射关系。再下一步就可以根据doPost里取到的用户传来的参数找到对应的方法，并invoke方法了。
 
@@ -1325,7 +1325,7 @@ public class DispatcherServlet extends HttpServlet {
 {% endhighlight %}
 
 重启Tomcat，测试一下。
-![](http://p4suof94f.bkt.clouddn.com/springmvc_6.jpg)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/springmvc_6.jpg)
 
 把里面的方法都试一下，发现基本已经OK了，只要参数传对，整个流程是能走通的。
 

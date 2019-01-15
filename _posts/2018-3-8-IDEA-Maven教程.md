@@ -76,11 +76,11 @@ tags:
 </project>
 ```
 然后编辑调试配置，如下图：
-![](http://p2q983f8e.bkt.clouddn.com/maven_jetty_1.jpg)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/maven_jetty_1.jpg)
 在弹出的配置窗口中添加一个Maven配置，并输入运行信息，如下图：
-![](http://p2q983f8e.bkt.clouddn.com/maven_jetty_2.jpg)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/maven_jetty_2.jpg)
 保存之后，在右侧MavenProjects中双击刚配置的jetty即可启动服务器。
-![](http://p2q983f8e.bkt.clouddn.com/maven_jetty_3.jpg)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/maven_jetty_3.jpg)
 
 ### 3、利用intellij idea创建maven 多模块项目
 

@@ -15,71 +15,71 @@ tags:
 ### 1、注册GitHub
 
 #### 1.1第1步
-![](http://p1tx4k6f5.bkt.clouddn.com/1.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/1.png)
 
 #### 1.2第2步
-![](http://p1tx4k6f5.bkt.clouddn.com/2.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/2.png)
 
 #### 1.3第3步
-![](http://p1tx4k6f5.bkt.clouddn.com/3.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/3.png)
 
 #### 1.4第4步
-![](http://p1tx4k6f5.bkt.clouddn.com/4.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/4.png)
 
 #### 1.5第5步
-![](http://p1tx4k6f5.bkt.clouddn.com/5.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/5.png)
 
 #### 1.6第6步
-![](http://p1tx4k6f5.bkt.clouddn.com/6.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/6.png)
 
 #### 1.7第7步
-![](http://p1tx4k6f5.bkt.clouddn.com/7.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/7.png)
 
 #### 1.8第8步
-![](http://p1tx4k6f5.bkt.clouddn.com/8.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/8.png)
 
 #### 1.9第9步
-![](http://p1tx4k6f5.bkt.clouddn.com/9.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/9.png)
 
 #### 1.10第10步
-![](http://p1tx4k6f5.bkt.clouddn.com/10.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/10.png)
 
 #### 1.11第11步
-![](http://p1tx4k6f5.bkt.clouddn.com/11.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/11.png)
 
 #### 1.12第12步
-![](http://p1tx4k6f5.bkt.clouddn.com/12.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/12.png)
 
 ### 2、安装Git
 #### 2.1第1步
-![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall1.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/gitInstall1.png)
 
 #### 2.2第2步
-![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall2.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/gitInstall2.png)
 
 #### 2.3第3步
-![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall3.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/gitInstall3.png)
 
 #### 2.4第4步
-![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall4.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/gitInstall4.png)
 
 #### 2.5第5步
-![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall5.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/gitInstall5.png)
 
 #### 2.6第6步
-![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall6.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/gitInstall6.png)
 
 #### 2.7第7步
-![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall7.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/gitInstall7.png)
 
 #### 2.8第8步
-![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall8.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/gitInstall8.png)
 
 #### 2.9第9步
-![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall9.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/gitInstall9.png)
 
 #### 2.10第10步
-![](http://p1tx4k6f5.bkt.clouddn.com/gitInstall10.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/gitInstall10.png)
 
 ### 3、GitHub Pages操作
 #### 3.1快速搭建一个GitHub Pages
@@ -91,9 +91,9 @@ tags:
 + 3、输入`ssh-keygen -t rsa -C "sanhaowuai@163.com"`
 + 4、连续三次回车，创建无密码ssh
 + 5、去C盘下依次点开 /用户/zhaoheng/.ssh,然后复制id_rsa.pub中的内容到github中的秘钥配置中。github的公钥配置打开如下图：
-![](http://p1tx4k6f5.bkt.clouddn.com/gitpages1.png)
-![](http://p1tx4k6f5.bkt.clouddn.com/gitpages2.png)
-![](http://p1tx4k6f5.bkt.clouddn.com/gitpages3.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/gitpages1.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/gitpages2.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/gitpages3.png)
 + 6、验证是否连接Github,输入`ssh -T git@github.com`，若出现没有建立的错误输入yes 
 + 7、配置本地账户密码，输入：`git config --global user.name "sanhaowuai"`，回车，再次输入
 `git config --global user.email "sanhaowuai@163.com"`
@@ -143,17 +143,17 @@ tags:
 #### 4.1安装Ruby
 + 1、在d盘创建一个文件夹jekyll，打开jekyll再分别创建ruby、rubyDevelop文件夹
 + 2、双击rubyinstaller-2.4.1-x64.exe，按照以下截图，依次执行
-![](http://p1tx4k6f5.bkt.clouddn.com/jekyll1.png)
-![](http://p1tx4k6f5.bkt.clouddn.com/jekyll2.png)
-![](http://p1tx4k6f5.bkt.clouddn.com/jekyll3.png)
-![](http://p1tx4k6f5.bkt.clouddn.com/jekyll11.png)
-![](http://p1tx4k6f5.bkt.clouddn.com/jekyll12.png)
-![](http://p1tx4k6f5.bkt.clouddn.com/jekyll13.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/jekyll1.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/jekyll2.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/jekyll3.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/jekyll11.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/jekyll12.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/jekyll13.png)
 **测试ruby是否安装完成，在cmd窗口执行ruby -v**
 
 #### 4.2安装RubyKit
 双击DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe（或者解压），按照以下截图执行
-![](http://p1tx4k6f5.bkt.clouddn.com/jekyll5.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/jekyll5.png)
 **解压完成后，依次输入下面的命令初始化config.yml**
 
 {% highlight java%}
@@ -200,12 +200,12 @@ gem update --system
 gem install jekyll
 {% endhighlight %}
 + 2、在RubyDevelop的安装文件夹里创建一个文件夹myblog,然后将本地的克隆好的sanhaowuai.github.io整体复制到myblog
-![](http://p1tx4k6f5.bkt.clouddn.com/jekyll8.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/jekyll8.png)
 + 3、执行命令`cd /d d:\jekyll\rubyDevelop\myblog\sanhaowuai.github.io`
 + 4、执行命令`jekyll server`，若出现错误，则在所出现的错误前面加上gem install，则变成gem install 错误名，然后执行，如下图
-![](http://p1tx4k6f5.bkt.clouddn.com/jekyll6.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/jekyll6.png)
 + 5、执行gem install 错误名后，再次执行jekyll server,有错误，就gem install 错误名，若无，会出现下方界面，则jekyll server启动成功
-![](http://p1tx4k6f5.bkt.clouddn.com/jekyl7.png)
+![](https://raw.githubusercontent.com/sanhaowuai/picBed/master/pastPic/jekyl7.png)
 #### 4.4访问博客
 在浏览器地址栏输入：`localhost:4000`，会出现博客的访问界面
 
