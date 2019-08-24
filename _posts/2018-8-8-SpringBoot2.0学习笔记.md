@@ -35,6 +35,11 @@ public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
 [参考博客](http://www.cnblogs.com/bossen/p/5824067.html)
 
 
+[SpringBoot封装我们自己的Starter](https://juejin.im/post/5d5fe6de518825164026c267?utm_source=gold_browser_extension)
+[我的Github开源项目，从0到20000 Star！](https://juejin.im/post/5d5d3301e51d453b5c1218ca?utm_source=gold_browser_extension)
+[3年java开发面试BAT，你必须彻底搞定Maven！](https://juejin.im/post/5d5d47f5e51d4561e5353945?utm_source=gold_browser_extension)
+
+
 
 
  
