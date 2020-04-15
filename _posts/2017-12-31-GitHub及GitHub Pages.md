@@ -215,6 +215,15 @@ gem install jekyll
 [添加统计功能](https://www.jianshu.com/p/9f71e260925d)
 [添加网易云音乐](http://www.zhimengzhe.com/HTMLjiaocheng/186049.html)
 
+### 6、github图床电脑不显示
+
+问题：GitHub的raw.githubusercontent.com无法链接  
++ 修改Hosts临时解决GitHub的raw.githubusercontent.com无法链接  
++ 通过IPAddress.com首页,输入raw.githubusercontent.com查询到真实IP地址是199.232.68.133  
++ C:\Windows\System32\drivers\etc  
++ hosts文件添加以下内容并保存即可恢复
++ 199.232.68.133  raw.githubusercontent.com
+
 
 
 
